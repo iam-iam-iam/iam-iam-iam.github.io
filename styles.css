@@ -1,0 +1,249 @@
+/* General Styles */
+@font-face {
+    font-family: 'Tokyo Dreams';
+    src: url('fonts/Tokyo-Dreams/WOFF - For use with web license/TokyoDreams-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tokyo Dreams Plain';
+    src: url('fonts/Tokyo-Dreams/WOFF - For use with web license/TokyoDreamsPlain-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tokyo-dreams-plain {
+    font-family: 'Tokyo Dreams Plain', sans-serif;
+  }
+
+html {
+    font-size: 100%; /* Base font size */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #e8e6e3; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Increased spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Tokyo Dreams', 'Arial', sans-serif;
+    font-size: 1.7rem;
+    padding: 10px 15px; 
+    display: inline-block;
+    position: relative; /* Needed for the hover underline effect */
+}
+
+nav ul li a:hover {
+    color: #333; /* Keep the same text color on hover */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust thickness of the underline */
+    left: 0;
+    bottom: 0;
+    background-color: #9B6D21;
+    transition: width 0.3s ease; 
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand the underline to full width on hover */
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-right: 20px; /* Adjust this value to increase or decrease spacing */
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding around the links for larger click areas */
+  }
+
+#home-header {
+    font-family: 'Tokyo Dreams Plain', 'Arial', sans-serif;
+    font-size: 3.5rem;
+}
+
+.home-hero {
+    background-image: url('images/home_background_text_glow.png');
+    background-size: cover;
+    background-position: center;
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    border-top: 5px solid #9B6D21;
+    border-bottom: 5px solid #9B6D21;
+    position: relative; /* Set position relative to allow absolute positioning for the button */
+}
+
+.home-hero .btn {
+    position: absolute;
+    bottom: -4%; /* Align the button to the bottom */
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background-color: #fdf5f1;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #bf929e;
+}
+
+.btn {
+    background-color: #bf929e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #d7a5b3;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#about h2 {
+    color: #bf929e;
+}
+
+#info {
+    background-color: #fdf5f1;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+#info-header {
+    font-family: 'Tokyo Dreams', 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.info-content {
+    max-width: 800px; 
+    margin: 0 auto; /* This centers the content horizontally */
+    font-family: 'Avenir', 'Arial', sans-serif;
+}
+
+.info-content h2 {
+    color: #bf929e;
+    font-size: 32px;
+}
+
+.info-content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #e8e6e3;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #9B6D21;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+    nav ul {
+      flex-direction: row;
+    }
+  
+    .home-hero {
+      height: 40vh; /* Adjust height for larger screens */
+    }
+  
+    .info-content {
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+}
+
+/* Media query for desktops and larger screens */
+@media (min-width: 1024px) {
+    body {
+      font-size: 1.125rem; /* Increase base font size */
+    }
+  
+    .hero {
+      padding: 80px 20px;
+    }
+  
+    .info-content {
+      padding: 60px;
+      max-width: 1000px;
+      margin-top: 1%;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing for vertical layout */
+    }
+
+    nav ul li a {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
