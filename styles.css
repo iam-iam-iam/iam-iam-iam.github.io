@@ -129,14 +129,12 @@ nav ul li a:hover::after {
 .btn {
     background-color: #bf929e;
     color: white;
-    padding: 15px 25px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3); 
-    text-shadow: 1px 2.5px 2px rgba(0, 0, 0, 0.3);
-    border: 1px, solid, rgba(155, 109, 33, 0.5);
-    position: absolute;
-    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
