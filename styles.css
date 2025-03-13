@@ -309,4 +309,23 @@ footer {
     nav ul li a {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%; /* Makes it more responsive */
+        max-width: 500px; /* Prevents it from being too wide */
+        margin: 0 auto; /* Centers the form */
+    }
+    
+    .contact-form label {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%; /* Ensures full-width on small screens */
+    }
 }
