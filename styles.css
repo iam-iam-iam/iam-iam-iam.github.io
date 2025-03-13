@@ -237,6 +237,60 @@ footer {
       max-width: 1000px;
       /* margin-top: 1%; */
     }
+
+    .contact-form {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 2px solid #b08d57; /* Updated to gold color */
+        border-radius: 10px;
+        background-color: #f9f7f6;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #644c4c;
+        text-align: left;
+    }
+    
+    .contact-form input, 
+    .contact-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #c2a5a5;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: inherit;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-form button {
+        display: block;
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #c2a5a5; 
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-form button:hover {
+        background-color: #997645;
+    } 
 }
 
 /* Media query for mobile screens */
