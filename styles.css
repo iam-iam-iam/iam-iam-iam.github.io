@@ -197,7 +197,7 @@ nav ul li a:hover::after {
 }
 
 .info-content .name-header {
-    font-family: 'Tokyo Dreams', 'Arial', sans-serif;
+    font-family: 'Tokyo Dreams Plain', 'Arial', sans-serif;
     color: #333;
     font-size: 2rem;
     font-weight: normal;

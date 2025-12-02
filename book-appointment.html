@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Appointment | Dharma Counselling</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon"> 
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/33769874.css" id="acuity-button-styles" /> 
 </head>
 <body>
   <header class="header-content">
@@ -20,9 +21,15 @@
 </header>
 
 <section id="book-appointment">
-  <h2>Book an Appointment</h2>
-  <p>Please choose a time and fill out the form below to book an appointment...</p>
-  <!-- Add booking form or scheduling tool here -->
+  <div class="info-content">
+    <h2 id='info-header'>
+      <span class="main-title">Book an Appointment</span><br/>
+      <span class="decorative-line">˚˚˚</span>
+    </h2>
+    <p>Please click the button below to schedule your appointment.</p>
+    <a href="https://app.acuityscheduling.com/schedule.php?owner=33769874&ref=booking_button" target="_blank" class="acuity-embed-button" style="background: #b668bd; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+    <script src="https://embed.acuityscheduling.com/embed/button/33769874.js" async></script>
+  </div>
 </section>
 
 <footer>
