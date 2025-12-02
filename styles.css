@@ -166,6 +166,10 @@ nav ul li a:hover::after {
     margin-bottom: 0;
 }
 
+#book-appointment #info-header {
+    font-family: 'Tokyo Dreams Plain', 'Arial', sans-serif !important;
+}
+
 .image-container {
     background-image: url('images/gold_circle.png');
     background-size: cover;
